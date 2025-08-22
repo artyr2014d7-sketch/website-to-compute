@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Черепа — Чат • Картинки • Файлы</title>
+<style>
+  :root{
+    --bg:#0e0e0f;--panel:#17171a;--accent:#00ffa6;--accent2:#ff2f6d;--text:#f2f2f2;--muted:#9aa0a6;--ok:#4caf50;--warn:#ff9800;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(135deg,#0b0b0c,#17171a 40%,#0b0b0c);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
+  header{position:sticky;top:0;background:#111;display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #222;z-index:5}
+  header .brand{font-weight:800;letter-spacing:.5px}
+  header .brand span{color:var(--accent)}
+  nav{margin-left:auto;display:flex;gap:8px}
+  nav button{background:#1c1c21;border:1px solid #2a2a31;color:var(--text);padding:8px 12px;border-radius:12px;cursor:pointer}
+  nav button.active{border-color:var(--accent);box-shadow:0 0 0 2px #00ffa633}
+  main{max-width:980px;margin:0 auto;padding:16px}
+  .card{background:var(--panel);border:1px solid #24242a;border-radius:16px;padding:16px;box-shadow:0 10px 30px #00000055}
+  .stack{display:grid;gap:16px}
+  /* CHAT */
+  #chatWrap{display:grid;grid-template-rows:auto 1fr auto;gap:12px;height:72vh}
+  #chatLog{overflow:auto;padding:10px;background:#121215;border:1px solid #23232a;border-radius:12px}
+  .msg{max-width:80%;padding:10px 12px;border-radius:12px;margin:8px 0;line-height:1.35}
+  .me{background:#16281f;border:1px solid #1f3b2c}
+  .bot{background
